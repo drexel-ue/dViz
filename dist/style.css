@@ -44,6 +44,8 @@
   padding: 3px;
   border: 1px solid black;
   margin: 0 10px;
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.9s;
 }
 .commence {
   cursor: pointer;
