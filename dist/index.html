@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>dViz</title>
+    <script type="text/javascript">
+      let selection = "";
+      let source;
+      const graph = {};
+      let stop;
+      let square = 30;
+    </script>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background: beige;">
+  <body class="body" style="background: beige;">
     <div class="root"></div>
+    <div id="right_menu" class="right_menu">
+      <div class="header">Controls</div>
+      <div class="label">Select:</div>
+      <div class="node_select">
+        <div id="select_start" class="checkbox">Start</div>
+        <div id="select_stop" class="checkbox">Stop</div>
+      </div>
+      <div class="commence">Commence</div>
+    </div>
   </body>
 </html>
