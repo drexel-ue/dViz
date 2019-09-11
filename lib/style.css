@@ -15,4 +15,6 @@
 .node {
   border: 1px solid black;
   height: 100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
