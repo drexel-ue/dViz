@@ -10,7 +10,8 @@
       let source;
       const graph = {};
       let stop;
-      let square = 30;
+      let square = 10;
+      let dimensions = "x10";
     </script>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -19,7 +20,12 @@
     <div class="root"></div>
     <div id="right_menu" class="right_menu">
       <div class="header">Controls</div>
-      <div class="label">Select:</div>
+      <div class="label">Board Size:</div>
+      <div class="dimension_select">
+        <input class="dimension_input" type="text" value="10" />
+        <div class="dimension_suffix">x10</div>
+      </div>
+      <div class="label">Set:</div>
       <div class="node_select">
         <div id="select_start" class="checkbox">Start</div>
         <div id="select_stop" class="checkbox">Stop</div>
