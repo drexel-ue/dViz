@@ -35,6 +35,7 @@
   padding: 10px 0;
 }
 .checkbox {
+  position: relative;
   cursor: pointer;
   height: 30px;
   width: 30px;
@@ -46,6 +47,19 @@
   margin: 0 10px;
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
+}
+.checkbox_tooltip {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  width: 125px;
+  background: rgba(0, 0, 0, 0.658);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .commence {
   cursor: pointer;
@@ -85,6 +99,10 @@
   color: white;
   padding: 5px;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .hide {
   display: none;
