@@ -61,6 +61,7 @@
   align-items: center;
   margin-top: 5px;
   margin-bottom: 15px;
+  position: relative;
 }
 .dimension_input {
   text-align: center;
@@ -72,6 +73,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dimension_tooltip {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  width: 125px;
+  background: rgba(0, 0, 0, 0.658);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
 }
 .hide {
   display: none;
