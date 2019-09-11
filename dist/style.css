@@ -59,6 +59,8 @@
 .dimension_select {
   display: flex;
   align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 .dimension_input {
   text-align: center;
