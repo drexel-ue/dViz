@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>dViz</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://christian-kohler.gallerycdn.vsassets.io/extensions/christian-kohler/path-intellisense/1.4.2/1494488953003/Microsoft.VisualStudio.Services.Icons.Default"
+    />
     <script type="text/javascript">
       let selection = "";
       let source;
@@ -12,7 +17,7 @@
       let stop;
       let square = 10;
       let dimensions = "x10";
-      let showModal = /*window.localStorage.getItem("show_modal") ||*/ true;
+      let showModal = window.localStorage.getItem("show_modal") || true;
     </script>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="style.css" />
