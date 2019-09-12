@@ -27,9 +27,23 @@
   flex-direction: column;
   align-items: center;
 }
+.header_box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
 .header {
   font-size: 30px;
   margin-bottom: 20px;
+}
+.show_modal {
+  position: absolute;
+  right: 0px;
+  top: 0%;
+  font-size: 20px;
+  cursor: pointer;
 }
 .node_select {
   display: flex;
