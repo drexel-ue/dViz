@@ -1,6 +1,8 @@
 .body {
   display: flex;
   position: relative;
+  min-width: 400px;
+  min-height: 800px;
 }
 .root {
   margin-left: auto;
