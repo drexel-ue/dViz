@@ -118,7 +118,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pai
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _right_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./right_menu */ \"./lib/right_menu.js\");\n/* harmony import */ var _build_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./build_grid */ \"./lib/build_grid.js\");\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", _ => {\n  Object(_build_grid__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\n\n//# sourceURL=webpack:///./lib/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _right_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./right_menu */ \"./lib/right_menu.js\");\n/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal */ \"./lib/modal.js\");\n/* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modal__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _build_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./build_grid */ \"./lib/build_grid.js\");\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", _ => {\n  Object(_build_grid__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n});\n\n\n//# sourceURL=webpack:///./lib/index.js?");
+
+/***/ }),
+
+/***/ "./lib/modal.js":
+/*!**********************!*\
+  !*** ./lib/modal.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("document.addEventListener(\"DOMContentLoaded\", () => {\n  const modalBackground = document.getElementsByClassName(\n    \"modal_background\"\n  )[0];\n  const close = document.getElementsByClassName(\"close\")[0];\n\n  [modalBackground, close].forEach(el => {\n    el.addEventListener(\"click\", () => {\n      modalBackground.classList.add(\"hide\");\n    });\n  });\n});\n\n\n//# sourceURL=webpack:///./lib/modal.js?");
 
 /***/ }),
 
