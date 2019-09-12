@@ -168,3 +168,19 @@
 .hide {
   display: none;
 }
+.check_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@supports (zoom: 1.6) {
+  input[type="checkbox"] {
+    zoom: 1.6;
+  }
+}
+@supports not (zoom: 1.6) {
+  input[type="checkbox"] {
+    transform: scale(1.6);
+    margin: 15px;
+  }
+}
