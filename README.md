@@ -1,4 +1,4 @@
-# BADREADS
+# dViz
 
 ## Background and Overview
 
@@ -7,6 +7,24 @@
 ## Use
 
 Use is intuitive and tooltips are provided to highlight functions. When first coming to the site, a modal is presented to give a quick feature guide. The option to hide this modal on subsequent loads is also available. Should the modal ever need to accessed, a helpful `?` can be reached from the control panel.
+
+## Visual Examples
+
+#### Modal Instructions
+
+![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/modal.png)
+
+#### Controls
+
+![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/controls.png)
+
+#### Path found with no wall
+
+![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/no_wall.png)
+
+#### Path found with wall
+
+![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/with_wall.png)
 
 ## Technologies
 
