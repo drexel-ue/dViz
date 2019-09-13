@@ -16,15 +16,15 @@ Use is intuitive and tooltips are provided to highlight functions. When first co
 
 #### Controls
 
-![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/controls.png)
+![controls](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/controls.png)
 
 #### Path found with no wall
 
-![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/no_wall.png)
+![no_wall](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/no_wall.png)
 
 #### Path found with wall
 
-![modal_insructions](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/with_wall.png)
+![with_wall](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/with_wall.png)
 
 ## Technologies
 
