@@ -1,0 +1,15 @@
+{
+  "name": "dViz",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js; webpack --watch --mode=production;"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "http": "0.0.0",
+    "cors": "2.8.5",
+    "pug": "2.0.4"
+  },
+  "author": "IKesh Pack <packappsforyou@gmail.com>",
+  "license": "ISC"
+}
