@@ -16,7 +16,7 @@ Use is intuitive and tooltips are provided to highlight functions. When first co
 
 #### Controls
 
-![controls](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/controls.png)
+![controls](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/path_controls.png)
 
 #### Path found with no wall
 
