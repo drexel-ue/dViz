@@ -73,7 +73,7 @@
   align-items: center;
   justify-content: center;
 }
-.commence {
+#commence {
   cursor: pointer;
   height: 30px;
   width: 100px;

@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "style",
     `width:${(width - height) / 2 - 20}px; padding: 0 10px`
   );
-  const checkboxes = document.querySelectorAll(".checkbox");
-  const commence = document.getElementsByClassName("commence")[0];
-  const startBox = checkboxes[0];
-  const stopBox = checkboxes[1];
-  const wallBox = checkboxes[2];
-  const reset = checkboxes[3];
+
+  const startBox = document.getElementById("select_start");
+  const stopBox = document.getElementById("select_stop");
+  const wallBox = document.getElementById("select_wall");
+  const reset = document.getElementById("reset");
+
+  const checkboxes = [startBox, stopBox, wallBox, reset];
 
   let interval;
 
