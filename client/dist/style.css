@@ -41,13 +41,6 @@
   font-size: 30px;
   margin-bottom: 20px;
 }
-.show_modal {
-  position: absolute;
-  right: 0px;
-  top: 0%;
-  font-size: 20px;
-  cursor: pointer;
-}
 .node_select {
   display: flex;
   padding: 10px 0;
@@ -117,34 +110,6 @@
   justify-content: center;
   text-align: center;
 }
-.modal_background {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  height: 110vh;
-  width: 110vw;
-  background: rgba(0, 0, 0, 0.788);
-}
-.modal {
-  position: relative;
-  height: 80vh;
-  width: 90vh;
-  background: beige;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 20px;
-}
 .instruction {
   display: flex;
   margin: 20px 0;
@@ -168,11 +133,6 @@
 }
 .hide {
   display: none;
-}
-.check_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 @supports (zoom: 1.6) {
   input[type="checkbox"] {

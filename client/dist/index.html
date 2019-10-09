@@ -23,11 +23,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body" style="background: beige;">
+    <div class="title">dViz</div>
+    <p class="synopsis">
+      dViz is a path finding algorithm visualizer. The following demonstration
+      will showcase Dijkstra's algorithm.
+    </p>
+    <div class="instructions">
+      <div class="instruction">
+        <div id="select_start" class="checkbox">
+          Start
+        </div>
+        <p class="instruction_text">
+          The Start button will allow you to select a starting point.
+        </p>
+      </div>
+      <div class="instruction">
+        <div id="select_stop" class="checkbox">
+          Stop
+        </div>
+        <p class="instruction_text">
+          The Stop button will allow you to select a stoping point.
+        </p>
+      </div>
+      <div class="instruction">
+        <div id="select_wall" class="checkbox">
+          Wall
+        </div>
+        <p class="instruction_text">
+          The Wall button will allow you to place obstacles on the grid in a
+          click and drag fashion.
+        </p>
+      </div>
+      <div class="instruction">
+        <div id="reset" class="checkbox">
+          X
+        </div>
+        <p class="instruction_text">
+          The reset button will clear the grid.
+        </p>
+      </div>
+    </div>
     <div class="root"></div>
     <div id="right_menu" class="right_menu">
       <div class="header_box">
         <div class="header">Controls</div>
-        <div class="show_modal">?</div>
       </div>
       <div class="label">Board Size:</div>
       <div class="dimension_select">
@@ -65,55 +104,6 @@
         </div>
       </div>
       <div class="commence">Commence</div>
-    </div>
-    <div class="modal_background hide">
-      <div class="modal">
-        <div class="close">X</div>
-        <div class="title">dViz</div>
-        <p class="synopsis">
-          dViz is a path finding algorithm visualizer. The following
-          demonstration will showcase Dijkstra's algorithm.
-        </p>
-        <div class="instructions">
-          <div class="instruction">
-            <div id="select_start" class="checkbox">
-              Start
-            </div>
-            <p class="instruction_text">
-              The Start button will allow you to select a starting point.
-            </p>
-          </div>
-          <div class="instruction">
-            <div id="select_stop" class="checkbox">
-              Stop
-            </div>
-            <p class="instruction_text">
-              The Stop button will allow you to select a stoping point.
-            </p>
-          </div>
-          <div class="instruction">
-            <div id="select_wall" class="checkbox">
-              Wall
-            </div>
-            <p class="instruction_text">
-              The Wall button will allow you to place obstacles on the grid in a
-              click and drag fashion.
-            </p>
-          </div>
-          <div class="instruction">
-            <div id="reset" class="checkbox">
-              X
-            </div>
-            <p class="instruction_text">
-              The reset button will clear the grid.
-            </p>
-          </div>
-        </div>
-        <div class="check_row">
-          <input type="checkbox" class="modal_check" />
-          <div class="check_text">Hide next time?</div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
