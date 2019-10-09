@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selection !== "stop") {
       interval = setInterval(() => {
         stopBox.style.background =
-          stopBox.style.background === "darkgreen"
+          stopBox.style.background === "rgba(8, 131, 16, 0.65)"
             ? "transparent"
-            : "darkgreen";
+            : "rgba(8, 131, 16, 0.65)";
       }, 750);
     }
   });
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   stopBox.addEventListener("click", () => {
     clearInterval(interval);
-    stopBox.style.background = "darkgreen";
+    stopBox.style.background = "rgba(8, 131, 16, 0.65)";
     startBox.style.background = "transparent";
     startBox.style.color = "silver";
     wallBox.style.background = "transparent";

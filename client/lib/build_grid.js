@@ -63,7 +63,7 @@ export default () => {
             const prevStop = document.getElementById(stop.join(","));
             prevStop.style.background = "transparent";
           }
-          colDiv.style.background = "green";
+          colDiv.style.background = "rgba(8, 131, 16, 0.65)";
           stop = pos;
         }
       });

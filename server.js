@@ -19,6 +19,6 @@ app.get("/", (_, res) => {
   res.render("index");
 });
 
-const server = http.Server(app, () => console.log("welcome to dViz"));
+const server = http.Server(app, () => console.log("Welcome to dViz"));
 
 server.listen(port);

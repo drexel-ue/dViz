@@ -17,7 +17,7 @@ const dijkstras = (graph, source) => {
     if (currNode !== source.join(",") && currNode !== stop.join(",")) {
       const node = document.getElementById(currNode);
       setTimeout(() => {
-        node.style.background = "darkblue";
+        node.style.background = "rgba(83, 9, 219, 0.65)";
       }, 1000 * Math.log(index / size));
     }
     unvisited.delete(currNode);
@@ -37,7 +37,7 @@ const dijkstras = (graph, source) => {
         let taco = unvisited.size;
         setTimeout(() => {
           if (taco === 1) paintPath(distance, previous, stop);
-          node.style.background = "yellow";
+          node.style.background = "rgba(255, 251, 0, 0.65)";
         }, 1000 * Math.log(index / size));
       }
     }

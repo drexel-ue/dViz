@@ -45,6 +45,7 @@ Use is intuitive and tooltips are provided to highlight functions. When first co
 ![with_wall](https://raw.githubusercontent.com/drexel-ue/dViz/master/demo_pngs/with_wall.png)
 
 ### Javascript implementation of Dijkstra's algorithm
+
 ```javascript
 const dijkstras = (graph, source) => {
   let distance = {};
@@ -63,8 +64,8 @@ const dijkstras = (graph, source) => {
     if (currNode !== source.join(",") && currNode !== stop.join(",")) {
       const node = document.getElementById(currNode);
       setTimeout(() => {
-        node.style.background = "darkblue";
-      }, 1000 * Math.log(index / size)); // Use setTimeouts to structure animation tree after the math behind the algorithm. 
+        node.style.background = "rgba(83, 9, 219, 0.65)";
+      }, 1000 * Math.log(index / size)); // Use setTimeouts to structure animation tree after the math behind the algorithm.
     }
     unvisited.delete(currNode);
 
@@ -83,7 +84,7 @@ const dijkstras = (graph, source) => {
         let taco = unvisited.size;
         setTimeout(() => {
           if (taco === 1) paintPath(distance, previous, stop);
-          node.style.background = "yellow";
+          node.style.background = "rgba(255, 251, 0, 0.65)";
         }, 1000 * Math.log(index / size)); // Logorithm scales total animation duration to the size of the query field.
       }
     }
@@ -98,4 +99,3 @@ const minDistanceNode = (nodes, distance) => {
   );
 };
 ```
-
