@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selection !== "start") {
       interval = setInterval(() => {
         startBox.style.background =
-          startBox.style.background === "black" ? "transparent" : "black";
+          startBox.style.background === "silver" ? "transparent" : "silver";
         startBox.style.color =
-          startBox.style.color === "white" ? "black" : "white";
+          startBox.style.color === "black" ? "silver" : "black";
       }, 750);
     }
   });
@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
           stopBox.style.background === "darkgreen"
             ? "transparent"
             : "darkgreen";
-        stopBox.style.color =
-          stopBox.style.color === "white" ? "black" : "white";
       }, 750);
     }
   });
@@ -51,8 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
           wallBox.style.background === "darkorange"
             ? "transparent"
             : "darkorange";
-        wallBox.style.color =
-          wallBox.style.color === "white" ? "black" : "white";
       }, 750);
     }
   });
@@ -61,13 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
     interval = setInterval(() => {
       reset.style.background =
         reset.style.background === "darkred" ? "transparent" : "darkred";
-      reset.style.color = reset.style.color === "white" ? "black" : "white";
     }, 750);
   });
   startBox.addEventListener("mouseleave", () => {
     startBox.firstElementChild.classList.add("hide");
     if (selection !== "start") {
-      startBox.style.color = "black";
       startBox.style.background = "transparent";
     }
     clearInterval(interval);
@@ -75,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   stopBox.addEventListener("mouseleave", () => {
     stopBox.firstElementChild.classList.add("hide");
     if (selection !== "stop") {
-      stopBox.style.color = "black";
       stopBox.style.background = "transparent";
     }
     clearInterval(interval);
@@ -83,45 +76,37 @@ document.addEventListener("DOMContentLoaded", () => {
   wallBox.addEventListener("mouseleave", () => {
     wallBox.firstElementChild.classList.add("hide");
     if (selection !== "wall") {
-      wallBox.style.color = "black";
       wallBox.style.background = "transparent";
     }
     clearInterval(interval);
   });
   reset.addEventListener("mouseleave", () => {
     reset.firstElementChild.classList.add("hide");
-    reset.style.color = "black";
     reset.style.background = "transparent";
     clearInterval(interval);
   });
   startBox.addEventListener("click", () => {
     clearInterval(interval);
-    startBox.style.background = "black";
-    startBox.style.color = "white";
-    stopBox.style.color = "black";
+    startBox.style.background = "silver";
+    startBox.style.color = "black";
     stopBox.style.background = "transparent";
-    wallBox.style.color = "black";
     wallBox.style.background = "transparent";
     selection = "start";
   });
   stopBox.addEventListener("click", () => {
     clearInterval(interval);
     stopBox.style.background = "darkgreen";
-    stopBox.style.color = "white";
-    startBox.style.color = "black";
     startBox.style.background = "transparent";
-    wallBox.style.color = "black";
+    startBox.style.color = "silver";
     wallBox.style.background = "transparent";
     selection = "stop";
   });
   wallBox.addEventListener("click", () => {
     clearInterval(interval);
     wallBox.style.background = "darkorange";
-    wallBox.style.color = "white";
-    stopBox.style.color = "black";
     stopBox.style.background = "transparent";
-    startBox.style.color = "black";
     startBox.style.background = "transparent";
+    startBox.style.color = "silver";
     selection = "wall";
   });
   reset.addEventListener("click", () => {
@@ -129,8 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
     selection = "";
     source = undefined;
     stop = undefined;
+    startBox.style.color = "silver";
     checkboxes.forEach(box => {
-      box.style.color = "black";
       box.style.background = "transparent";
     });
     buildGrid();

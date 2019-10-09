@@ -3,12 +3,13 @@
   position: relative;
   min-width: 1028px;
   min-height: 500px;
+  color: silver;
+  background: black;
 }
 .root {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  background: beige;
   height: 100vh;
   width: 100vh;
   min-height: 500px;
@@ -20,7 +21,7 @@
   display: flex;
 }
 .node {
-  border: 1px solid black;
+  border: 1px solid silver;
   height: 100%;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -47,6 +48,7 @@
   padding: 10px 0;
 }
 .checkbox {
+  /* color: silver; */
   position: relative;
   cursor: pointer;
   height: 30px;
@@ -55,7 +57,7 @@
   align-items: center;
   justify-content: center;
   padding: 3px;
-  border: 1px solid black;
+  border: 1px solid silver;
   margin: 0 10px;
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
@@ -66,7 +68,7 @@
   right: 15px;
   width: 125px;
   background: rgba(0, 0, 0, 0.658);
-  color: white;
+  color: silver;
   padding: 5px;
   border-radius: 3px;
   display: flex;
@@ -103,7 +105,7 @@
   right: 40px;
   width: 125px;
   background: rgba(0, 0, 0, 0.658);
-  color: white;
+  color: silver;
   padding: 5px;
   border-radius: 3px;
   display: flex;
@@ -137,15 +139,4 @@
 }
 .hide {
   display: none;
-}
-@supports (zoom: 1.6) {
-  input[type="checkbox"] {
-    zoom: 1.6;
-  }
-}
-@supports not (zoom: 1.6) {
-  input[type="checkbox"] {
-    transform: scale(1.6);
-    margin: 15px;
-  }
 }
