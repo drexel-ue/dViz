@@ -55,7 +55,7 @@ export default () => {
             const prevStart = document.getElementById(source.join(","));
             prevStart.style.background = "transparent";
           }
-          colDiv.style.background = "black";
+          colDiv.style.background = "silver";
           source = pos;
         }
         if (selection === "stop") {
