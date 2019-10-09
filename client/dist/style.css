@@ -48,7 +48,6 @@
   padding: 10px 0;
 }
 .checkbox {
-  /* color: silver; */
   position: relative;
   cursor: pointer;
   height: 30px;
@@ -67,8 +66,8 @@
   top: 45px;
   right: 15px;
   width: 125px;
-  background: rgba(0, 0, 0, 0.658);
-  color: silver;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
   padding: 5px;
   border-radius: 3px;
   display: flex;
@@ -83,7 +82,7 @@
   align-items: center;
   justify-content: center;
   padding: 3px;
-  border: 1px solid black;
+  border: 1px solid silver;
   margin: 0 10px;
 }
 .dimension_select {
@@ -91,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   position: relative;
 }
 .dimension_suffix {
@@ -104,8 +103,8 @@
   top: 70px;
   right: 40px;
   width: 125px;
-  background: rgba(0, 0, 0, 0.658);
-  color: silver;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
   padding: 5px;
   border-radius: 3px;
   display: flex;
