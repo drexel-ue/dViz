@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rig
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((distance, pathHash, stop) => {\n  let currentDistance = Infinity;\n  let posToPaint = \"\";\n\n  while (currentDistance > 2) {\n    currentDistance = distance[`${stop[0]},${stop[1]}`];\n    posToPaint = pathHash[`${stop[0]},${stop[1]}`];\n    stop = pathHash[`${stop[0]},${stop[1]}`].split(\",\");\n    const nodeToPaint = document.getElementById(posToPaint);\n    //   setTimeout(() => {\n    nodeToPaint.style.background = \"pink\";\n    //   }, square);\n  }\n});\n\n\n//# sourceURL=webpack:///./client/lib/paint_path.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((distance, pathHash, stop) => {\n  let currentDistance = Infinity;\n  let posToPaint = \"\";\n\n  while (currentDistance > 2) {\n    currentDistance = distance[`${stop[0]},${stop[1]}`];\n    posToPaint = pathHash[`${stop[0]},${stop[1]}`];\n    stop = pathHash[`${stop[0]},${stop[1]}`].split(\",\");\n    const nodeToPaint = document.getElementById(posToPaint);\n    nodeToPaint.style.background = \"pink\";\n  }\n});\n\n\n//# sourceURL=webpack:///./client/lib/paint_path.js?");
 
 /***/ }),
 

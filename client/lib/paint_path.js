@@ -7,8 +7,6 @@ export default (distance, pathHash, stop) => {
     posToPaint = pathHash[`${stop[0]},${stop[1]}`];
     stop = pathHash[`${stop[0]},${stop[1]}`].split(",");
     const nodeToPaint = document.getElementById(posToPaint);
-    //   setTimeout(() => {
     nodeToPaint.style.background = "pink";
-    //   }, square);
   }
 };
