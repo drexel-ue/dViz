@@ -1,8 +1,8 @@
 .body {
   display: flex;
   position: relative;
-  min-width: 800px;
-  min-height: 800px;
+  min-width: 1028px;
+  min-height: 500px;
 }
 .root {
   margin-left: auto;
