@@ -17,50 +17,51 @@
       let stop;
       let square = 10;
       let dimensions = "x10";
-      let showModal = window.localStorage.getItem("show_modal") || "show";
     </script>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body" style="background: beige;">
-    <div class="title">dViz</div>
-    <p class="synopsis">
-      dViz is a path finding algorithm visualizer. The following demonstration
-      will showcase Dijkstra's algorithm.
-    </p>
-    <div class="instructions">
-      <div class="instruction">
-        <div id="select_start" class="checkbox">
-          Start
+    <div class="left_menu">
+      <div class="title">dViz</div>
+      <p class="synopsis">
+        dViz is a path finding algorithm visualizer. The following demonstration
+        will showcase Dijkstra's algorithm.
+      </p>
+      <div class="instructions">
+        <div class="instruction">
+          <div id="select_start" class="checkbox">
+            Start
+          </div>
+          <p class="instruction_text">
+            The Start button will allow you to select a starting point.
+          </p>
         </div>
-        <p class="instruction_text">
-          The Start button will allow you to select a starting point.
-        </p>
-      </div>
-      <div class="instruction">
-        <div id="select_stop" class="checkbox">
-          Stop
+        <div class="instruction">
+          <div id="select_stop" class="checkbox">
+            Stop
+          </div>
+          <p class="instruction_text">
+            The Stop button will allow you to select a stoping point.
+          </p>
         </div>
-        <p class="instruction_text">
-          The Stop button will allow you to select a stoping point.
-        </p>
-      </div>
-      <div class="instruction">
-        <div id="select_wall" class="checkbox">
-          Wall
+        <div class="instruction">
+          <div id="select_wall" class="checkbox">
+            Wall
+          </div>
+          <p class="instruction_text">
+            The Wall button will allow you to place obstacles on the grid in a
+            click and drag fashion.
+          </p>
         </div>
-        <p class="instruction_text">
-          The Wall button will allow you to place obstacles on the grid in a
-          click and drag fashion.
-        </p>
-      </div>
-      <div class="instruction">
-        <div id="reset" class="checkbox">
-          X
+        <div class="instruction">
+          <div id="reset" class="checkbox">
+            X
+          </div>
+          <p class="instruction_text">
+            The reset button will clear the grid.
+          </p>
         </div>
-        <p class="instruction_text">
-          The reset button will clear the grid.
-        </p>
       </div>
     </div>
     <div class="root"></div>
