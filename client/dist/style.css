@@ -67,6 +67,7 @@
   top: 45px;
   right: 15px;
   width: 125px;
+  text-align: center;
   background: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 5px;
@@ -76,6 +77,8 @@
   justify-content: center;
 }
 #commence {
+  text-align: center;
+  position: relative;
   cursor: pointer;
   height: 30px;
   width: 100px;

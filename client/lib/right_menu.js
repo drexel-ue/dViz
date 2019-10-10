@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startBox.firstElementChild.classList.add("hide");
     if (selection !== "start") {
       startBox.style.background = "transparent";
+      startBox.style.color = "silver";
     }
     clearInterval(interval);
   });
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   commence.addEventListener("mouseleave", () => {
     commence.firstElementChild.classList.add("hide");
-    if (selection !== "start") commence.style.background = "transparent";
+    if (selection !== "commence") commence.style.background = "transparent";
     clearInterval(interval);
   });
   startBox.addEventListener("click", () => {
@@ -142,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startBox.style.background = "transparent";
     if (source && stop) commence.style.background = "rgba(83, 9, 219, 0.65)";
     startBox.style.color = "silver";
-    selection = "start";
+    selection = "commence";
   });
 
   commence.addEventListener("click", () => {
