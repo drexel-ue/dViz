@@ -85,6 +85,8 @@
   padding: 10px;
   margin: 10px 0;
   border: 1px solid silver;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 .dimension_select {
   display: flex;

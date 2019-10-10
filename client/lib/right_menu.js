@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const stopBox = document.getElementById("select_stop");
   const wallBox = document.getElementById("select_wall");
   const reset = document.getElementById("reset");
+  const commence = document.getElementById("commence");
 
-  const checkboxes = [startBox, stopBox, wallBox, reset];
+  const checkboxes = [startBox, stopBox, wallBox, reset, commence];
 
   let interval;
 
@@ -59,6 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
         reset.style.background === "darkred" ? "transparent" : "darkred";
     }, 750);
   });
+  commence.addEventListener("mouseenter", () => {
+    commence.firstElementChild.classList.remove("hide");
+    interval = setInterval(() => {
+      commence.style.background =
+        commence.style.background === "rgba(83, 9, 219, 0.65)"
+          ? "transparent"
+          : "rgba(83, 9, 219, 0.65)";
+    }, 750);
+  });
   startBox.addEventListener("mouseleave", () => {
     startBox.firstElementChild.classList.add("hide");
     if (selection !== "start") {
@@ -83,6 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
   reset.addEventListener("mouseleave", () => {
     reset.firstElementChild.classList.add("hide");
     reset.style.background = "transparent";
+    clearInterval(interval);
+  });
+  commence.addEventListener("mouseleave", () => {
+    commence.firstElementChild.classList.add("hide");
+    if (selection !== "start") commence.style.background = "transparent";
     clearInterval(interval);
   });
   startBox.addEventListener("click", () => {
@@ -119,6 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
       box.style.background = "transparent";
     });
     buildGrid();
+  });
+  commence.addEventListener("click", () => {
+    clearInterval(interval);
+    wallBox.style.background = "transparent";
+    stopBox.style.background = "transparent";
+    startBox.style.background = "transparent";
+    if (source && stop) commence.style.background = "rgba(83, 9, 219, 0.65)";
+    startBox.style.color = "silver";
+    selection = "start";
   });
 
   commence.addEventListener("click", () => {
