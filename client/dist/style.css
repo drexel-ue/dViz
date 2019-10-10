@@ -5,6 +5,7 @@
   min-height: 500px;
   color: silver;
   background: black;
+  font-family: "Open Sans", sans-serif;
 }
 .root {
   margin-left: auto;
@@ -55,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px;
+  padding: 10px;
   border: 1px solid silver;
   margin: 0 10px;
   -webkit-transition-duration: 0.9s;
@@ -81,9 +82,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px;
+  padding: 10px;
+  margin: 10px 0;
   border: 1px solid silver;
-  margin: 0 10px;
 }
 .dimension_select {
   display: flex;
