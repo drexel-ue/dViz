@@ -133,19 +133,23 @@
 .instruction .checkbox {
   cursor: auto;
 }
-.title_container {
+.links_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-  font-size: 30px;
-}
-.title {
-  margin-right: 10px;
-}
-.gh_link {
+  width: 150px;
   color: white;
   text-decoration: none;
+}
+.links_container img {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+.title {
+  font-size: 30px;
+  margin-right: 10px;
 }
 .synopsis {
   font-size: 18px;
