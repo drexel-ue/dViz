@@ -8,7 +8,7 @@
     "express": "4.17.1",
     "http": "0.0.0",
     "cors": "2.8.5",
-    "pug": "2.0.4"
+    "pug": "3.0.1"
   },
   "author": "IKesh Pack <packappsforyou@gmail.com>",
   "license": "ISC"
